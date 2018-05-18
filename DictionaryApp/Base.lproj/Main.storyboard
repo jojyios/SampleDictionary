@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XpB-cH-rtz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DICTIONARY-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DictionaryVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="DictionaryVC" customModule="DictionaryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PIC1" translatesAutoresizingMaskIntoConstraints="NO" id="XYP-by-P2x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keN-iR-vIn">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nEU-jd-6ri"/>
+                                </connections>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zi8-Gm-nb1" customClass="GetCardView" customModule="DictionaryApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="220" width="343" height="417"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CNv-AI-dMG">
+                                        <rect key="frame" x="8" y="160" width="327" height="210"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="210" id="N1T-Pk-13Q"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pj3-Wc-AqH">
+                                        <rect key="frame" x="8" y="91" width="327" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="2R5-6y-TFq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.96642468919230962" blue="0.48161187261576599" alpha="0.5781785102739726" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ah-79-s2p">
+                                        <rect key="frame" x="8" y="8" width="327" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="YSZ-JT-uTY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.50723531274573408" blue="0.45815724620558174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.7180559961928934" green="0.7180559961928934" blue="0.7180559961928934" alpha="0.78951733732876717" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3Ah-79-s2p" secondAttribute="trailing" constant="8" id="2W1-TP-Pun"/>
+                                    <constraint firstAttribute="bottom" secondItem="CNv-AI-dMG" secondAttribute="bottom" constant="47" id="8jK-hR-9ky"/>
+                                    <constraint firstItem="CNv-AI-dMG" firstAttribute="leading" secondItem="Zi8-Gm-nb1" secondAttribute="leading" constant="8" id="Hc0-z1-jBH"/>
+                                    <constraint firstAttribute="trailing" secondItem="pj3-Wc-AqH" secondAttribute="trailing" constant="8" id="HxK-eh-DAQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="CNv-AI-dMG" secondAttribute="trailing" constant="8" id="Mc2-yZ-gHv"/>
+                                    <constraint firstItem="pj3-Wc-AqH" firstAttribute="top" secondItem="3Ah-79-s2p" secondAttribute="bottom" constant="18" id="RwL-SD-kYe"/>
+                                    <constraint firstItem="3Ah-79-s2p" firstAttribute="top" secondItem="Zi8-Gm-nb1" secondAttribute="top" constant="8" id="dOK-1T-8Ly"/>
+                                    <constraint firstItem="3Ah-79-s2p" firstAttribute="leading" secondItem="Zi8-Gm-nb1" secondAttribute="leading" constant="8" id="e6M-4r-aGs"/>
+                                    <constraint firstItem="pj3-Wc-AqH" firstAttribute="leading" secondItem="Zi8-Gm-nb1" secondAttribute="leading" constant="8" id="r03-2z-JZV"/>
+                                    <constraint firstItem="CNv-AI-dMG" firstAttribute="top" secondItem="pj3-Wc-AqH" secondAttribute="bottom" constant="25" id="xBO-jd-8xj"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1H-F7-6ir">
+                                <rect key="frame" x="109" y="136" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84965894670050757" green="0.0" blue="0.23343605223257849" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" red="0.97022883416567829" green="1" blue="0.96800459777235681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zi8-Gm-nb1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="ALF-tC-JzC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XYP-by-P2x" secondAttribute="bottom" id="BX8-5Y-YDf"/>
+                            <constraint firstItem="XYP-by-P2x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HdA-NP-WQW"/>
+                            <constraint firstAttribute="trailing" secondItem="Zi8-Gm-nb1" secondAttribute="trailing" constant="16" id="J0P-c8-w38"/>
+                            <constraint firstItem="keN-iR-vIn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Mrl-eG-chk"/>
+                            <constraint firstAttribute="trailing" secondItem="XYP-by-P2x" secondAttribute="trailing" id="NSJ-dG-1ym"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zi8-Gm-nb1" secondAttribute="bottom" constant="30" id="RPH-JN-81n"/>
+                            <constraint firstAttribute="trailing" secondItem="keN-iR-vIn" secondAttribute="trailing" id="Udk-Xp-5rF"/>
+                            <constraint firstItem="Zi8-Gm-nb1" firstAttribute="top" secondItem="keN-iR-vIn" secondAttribute="bottom" constant="112" id="kjl-26-27U"/>
+                            <constraint firstItem="XYP-by-P2x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oPV-Bf-cSH"/>
+                            <constraint firstItem="keN-iR-vIn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uSq-tK-xRM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="DICTIONARY" id="bpA-Nh-7GF"/>
+                    <connections>
+                        <outlet property="disctxtview" destination="CNv-AI-dMG" id="Fhf-qp-aSQ"/>
+                        <outlet property="searchBar" destination="keN-iR-vIn" id="SYE-F8-Hsd"/>
+                        <outlet property="typelbl" destination="pj3-Wc-AqH" id="JyC-xX-n7Y"/>
+                        <outlet property="wordlbl" destination="3Ah-79-s2p" id="XvM-MX-EWH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181.5999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0O8-Xu-ums">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XpB-cH-rtz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cpc-UE-YMz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cpY-aO-hfY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVz-8n-STV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.59999999999999" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PIC1" width="1257" height="1354"/>
+    </resources>
+</document>
